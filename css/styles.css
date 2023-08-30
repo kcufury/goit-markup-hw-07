@@ -8,7 +8,7 @@
     --font-heading: 'Raleway', serif;
     --font-text: 'Roboto', sans-serif;
     --font-third-color: #404BBF;
-    --font-secondary-color:#434455;
+    --font-secondary-color: #434455;
     --font-main-color: #2E2F42;
     --brand-color: #4D5AE5;
     --border-secondary-color: #8E8F99;
@@ -17,7 +17,7 @@
     --modal: rgba(46, 47, 66, 0.40);
     --tr-function: cubic-bezier(0.4, 0, 0.2, 1);
     --tr-duration: 250ms;
-        --transition: var(--tr-function) var(--tr-duration);
+    --transition: var(--tr-function) var(--tr-duration);
 }
 
 .fillter-contact-1 a:hover,
@@ -41,13 +41,13 @@
 .social-links button:hover {
     color: var(--background-main-color);
     background: var(--background-fourth-color);
-    
+
 }
 
 .portfolio-list-hover:hover,
 .portfolio-list-hover:focus {
     transition: color var(--transition), background-color var(--transition),
-            box-shadow var(--transition);
+        box-shadow var(--transition);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
@@ -80,9 +80,12 @@ ol {
 }
 
 .container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+    min-width: 320px;
+        max-width: 1170px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
     position: relative;
 }
 
@@ -136,6 +139,7 @@ label {
     position: relative;
     ;
 }
+
 .fillter-web-links {
     display: flex;
     align-items: center;
@@ -242,13 +246,14 @@ label {
     /* 150% */
     letter-spacing: 0.02em;
     position: relative;
-        padding: 30px 0;
+    padding: 30px 0;
 }
 
 .slt-line {
     color: var(--brand-color);
     position: relative;
 }
+
 .slt-line::after {
     content: "";
     background-color: var(--background-fourth-color);
@@ -259,6 +264,7 @@ label {
     border-radius: 2px;
     position: absolute;
 }
+
 .crnt {
     position: relative;
 }
@@ -308,7 +314,7 @@ label {
     background: var(--brand-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    
+
 }
 
 .fillter-service-btn:hover,
@@ -501,6 +507,7 @@ label {
     justify-content: center;
     gap: 24px;
 }
+
 .fillter-sm-icon {
     cursor: pointer;
     width: 40px;
@@ -514,9 +521,10 @@ label {
     background-color: var(--background-fourth-color);
     border-radius: 50%;
 }
+
 .fillter-social {
     margin: 12px;
-        width: 16px;
+    width: 16px;
         height: 16px;
     }
     
@@ -560,7 +568,7 @@ label {
 .fillter-bottom-ul {
     display: flex;
     justify-content: center;
-    gap: 24px;  
+    gap: 24px;
 }
 
 .fillter-cms-icon {
@@ -585,7 +593,7 @@ label {
 .fillter-cms-icon:focus {
     border-color: var(--background-fourth-color);
     fill: var(--background-fourth-color);
-    
+
 }
 
 menu,
@@ -593,7 +601,7 @@ li {
     list-style-type: none;
 }
 
-.fillter-item > .button {
+.fillter-item>.button {
     color: var(--brand-color);
     text-align: inherit;
     /* Button Text */
@@ -629,7 +637,7 @@ li {
     margin: 0;
 }
 
-.social-links button{
+.social-links button {
     padding: 12px 24px;
     border-radius: 4px;
     border: none;
@@ -645,7 +653,7 @@ li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 48px 24px;
-    
+
 }
 
 .border-box {
@@ -704,7 +712,7 @@ li {
     background: var(--font-main-color);
 }
 
-.fillter-bottom-section ul{
+.fillter-bottom-section ul {
     display: inline-flex;
     justify-content: center;
 }
@@ -751,7 +759,7 @@ li {
     /* 150% */
     letter-spacing: 0.02em;
     margin-top: 16px;
- 
+
 }
 
 .fillter-footer-info-pos {
@@ -836,14 +844,14 @@ li {
     cursor: pointer;
     gap: 16px;
     padding: 0px 0px 0px 0px;
-    
+
 }
 
 .backdrop {
     position: fixed;
     width: 100%;
     height: 100%;
-        top: 0;
+    top: 0;
         left: 0;
         opacity: 1;
         background-color: rgba(46, 47, 66, 0.4);
@@ -853,31 +861,32 @@ li {
     position: absolute;
     top: 24px;
     right: 24px;
-        width: 24px;
+    width: 24px;
         height: 24px;
         cursor: pointer;
         background-color: var(--border-main-color);
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.1);
-            fill: var(--background-third-color);
-        }
-        
+        fill: var(--background-third-color);
+    }
 .close-btn-svg {
     padding: 7px 7px;
     max-width: 24px;
     max-height: 24px;
 }
+
 .close-btn:hover,
 .close-btn:focus {
     background-color: var(--background-fourth-color);
     fill: var(--background-secondary-color);
 }
+
 .modal {
     position: absolute;
-        top: 50%;
+    top: 50%;
         left: 50%;
-            width: 408px;
-            height: 584px;
+        width: 408px;
+        height: 584px;
         border-radius: 4px;
         background: var(--dairy);
         transform: translate(-50%, -50%);
@@ -902,7 +911,7 @@ li {
     /* 116.667% */
     letter-spacing: 0.48px;
     display: block;
-        padding-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 .modal-form-head {
@@ -926,12 +935,13 @@ li {
 .inputs {
     width: 300px;
 }
+
 .input-size-modal {
     position: absolute;
     width: 360px;
     height: 40px;
     outline: transparent;
-        border-radius: 4px;
+    border-radius: 4px;
         border: 1px solid var(--modal);
         padding-left: 38px;
 }
@@ -940,11 +950,13 @@ li {
 .input-size-modal:focus {
     border: 1px solid var(--brand-color);
 }
+
 .input-size-modal:focus+svg {
     fill: var(--brand-color);
 }
+
 .input-text-modal {
-        /* Small Text */
+    /* Small Text */
         font-size: 12px;
         font-weight: 400;
         line-height: 1.17;
@@ -953,7 +965,7 @@ li {
     width: 360px;
     height: 120px;
     margin-bottom: 16px;
-        outline: transparent;
+    outline: transparent;
         border-radius: 4px;
         border: 1px solid var(--modal);
         padding: 8px 8px;
@@ -976,6 +988,7 @@ li {
     outline: transparent;
     margin-bottom: 8px;
 }
+
 .is-hidden {
     pointer-events: none;
     visibility: hidden;
@@ -985,6 +998,7 @@ li {
 .is-hidden .modal {
     scale: 0;
 }
+
 .trn-hover {
     display: block;
     position: relative;
@@ -993,21 +1007,21 @@ li {
 
 .trn-description {
     position: absolute;
-        overflow: hidden;
+    overflow: hidden;
     top: 0;
-        left: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     transform: translateY(100%);
-        background: var(--brand-color);
+    background: var(--brand-color);
         transition: transform var(--transition);
     }
     
-        .trn-slider {
+    .trn-slider {
     color: var(--background-secondary-color);
     font-size: 16px;
     font-style: normal;
-        font-weight: 400;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
     padding: 40px 32px 164px;
@@ -1065,6 +1079,9 @@ li {
 }
 
 .subscribe-btn {
+    display: flex;
+        justify-content: center;
+        align-items: center;
     color: var(--background-main-color);
     text-align: center;
     /* Button Text */
@@ -1087,9 +1104,9 @@ li {
 }
 
 .subscribe-svg {
-    padding-top: 8px;
     margin-left: 16px;
 }
+
 .modal-icon {
     position: absolute;
     transform: var(--transition);
@@ -1124,6 +1141,7 @@ label::before {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .modal-svg {
     position: absolute;
     margin: 11px 16px;
@@ -1134,7 +1152,7 @@ label::before {
 .modal-con {
     display: inline-flex;
     align-items: center;
-        margin-bottom: 16px;
+    margin-bottom: 16px;
         color: var(--border-secondary-color);
         /* Small Text */
         font-size: 12px;
@@ -1147,16 +1165,16 @@ label::before {
 
 
 .modal-checkbox {
-        border-radius: 2px;
-            width: 16px;
-            height: 16px;
-            transition: background-color var(--transition);
+    border-radius: 2px;
+        width: 16px;
+        height: 16px;
+        transition: background-color var(--transition);
     }
     
     .check__box {
         fill: var(--background-secondary-color);
-            align-items: center;
-            display: inline-flex;
+        align-items: center;
+        display: inline-flex;
         width: 16px;
         height: 16px;
         border: 1px solid var(--modal);
@@ -1199,4 +1217,36 @@ label::before {
 .send-btn:focus,
 .sub-btn:focus {
     background-color: var(--background-fourth-color);
+}
+
+@media screen and (min-width: 428px) {
+    .container {
+        max-width: 428px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+}
+
+@media (max-width: 428px) {
+
+    .fillter-web-links,
+    .fillter-contact-links {
+        display: none;
+    }
+}
+
+@media (max-width: 428px) {
+    .side-info {
+        display: table-column;
+    }
 }
