@@ -20,6 +20,8 @@
     --transition: var(--tr-function) var(--tr-duration);
 }
 
+/* prettier-ignore */
+.my ugly rule {}
 .fillter-contact-1 a:hover,
 .fillter-contact-2 a:hover {
     color: var(--brand-color);
@@ -1221,7 +1223,7 @@ label::before {
 
 @media screen and (min-width: 428px) {
     .container {
-        max-width: 428px;
+        max-width: 480px;
     }
 }
 
@@ -1247,6 +1249,96 @@ label::before {
 
 @media (max-width: 428px) {
     .side-info {
-        display: table-column;
+            display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-self: stretch;
+            }
+            }
+            
+            @media (max-width: 480px) {
+                .fillter-paragraph {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            
+            .page-header .container {
+                min-width: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .container .side-info {
+                min-width: 320px;
+                max-width: 480px;
+                padding: 0 15px;
+            
+            }
+            
+            @media (min-width: 320px) {
+                .fillter-studio-info {
+                    display: none;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .side-info svg {
+                    display: none;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .container .fillter-team-info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .fillter-bottom-ul {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .footer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .fillter-sm-heading {
+                    padding: 0;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .fillter-bottom-section-logo {
+                    margin-bottom: 72px;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .fillter-footer-info {
+                    width: 269;
+                    display: flex;
+                    align-self: stretch;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .fillter-footer-icons-list {
+                    display: flex;
     }
 }
