@@ -146,15 +146,16 @@
 }
 
 @media (max-width: 480px) {
-    .main-info {
-        width: ;
-    }
-}
-
-@media (max-width: 480px) {
     .fillter-business {
         width: 320px;
         font-size: 36px;
         letter-spacing: 0.72px;
+    }
+}
+@media (max-width: 480px) {
+    .head-links {
+        display: flex;
+        flex-direction: row;
+        gap: 175px;
     }
 }
