@@ -1244,7 +1244,7 @@ label::before {
 }
 
 .manu-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -1253,13 +1253,12 @@ label::before {
     background-color: var(--background-main-color);
     z-index: 999;
     visibility: hidden;
-    transform: translateX(100%);
+    transform: translateX(0%);
     transition: transform 250ms var(--transition);
 }
 
-.manu-container,
-.is-open {
-    transform: translateX(0);
+.manu-container.is-open {
+    transform: translateX(100%);
     visibility: visible;
 }
 
@@ -1322,15 +1321,14 @@ label::before {
     transition: background-color var(--transition);
 }
 
-.menu-wrapper {
+.mobile-menu-wrapper {
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-between
 }
 
-.menu-container,
-.manu-toggle {
+.menu-container.manu-toggle {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -1346,4 +1344,8 @@ label::before {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--border-main-color);
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
 }
