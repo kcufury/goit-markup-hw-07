@@ -1219,3 +1219,131 @@ label::before {
 .sub-btn:focus {
     background-color: var(--background-fourth-color);
 }
+.menu-toggle {
+    min-height: 24px;
+    min-width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+.ham-icon {
+    max-width: 32px;
+    max-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    stroke: var(--font-main-color);
+}
+
+.manu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 40px;
+    background-color: var(--background-main-color);
+    z-index: 999;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: transform 250ms var(--transition);
+}
+
+.manu-container,
+.is-open {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.mobile-menu .link {
+    display: block;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.111;
+    letter-spacing: 0.72px;
+    color: var(--font-main-color);
+    margin-bottom: 40px;
+}
+
+.mobile-menu:active,
+.mobile-active:active {
+    color: var(--brand-color);
+}
+
+.mobile-menu {
+    padding: 0;
+    margin-top: 80px;
+    list-style: none;
+}
+
+.mobile-tel {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.111;
+    letter-spacing: 0.72px;
+    color: var(--brand-color);
+    margin-bottom: 40px;
+}
+
+.mobile-mail {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--font-secondary-color);
+}
+
+.mobile-social {
+    display: flex;
+    max-width: 328px;
+    margin-top: 48px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.social-mobile-icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand-color);
+    transition: background-color var(--transition);
+}
+
+.menu-wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.menu-container,
+.manu-toggle {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: #fff;
+    background-color: var(--border-main-color);
+    fill: var(--font-main-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-btn-ftr {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--border-main-color);
+}
