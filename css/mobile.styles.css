@@ -249,9 +249,47 @@
     }
 }
 
-@media (min-wdith: 768px) {
-    .fillter-team-info>.fillter-social-img {
+@media (min-width: 768px) {
+    .fillter-team-info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 64px 24px;
+            justify-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .fillter-social-img {
+        max-width: 264px;
+    }
+}
+
+@media (min-width: 768px) {
+    .fillter-customers-section .fillter-bottom-ul {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(3, 3fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .fillter-sm-heading {
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .subscribe-input .sub-form {
+        display: inline-flex;
     }
 }
