@@ -10,16 +10,22 @@
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
+        display: flex;
+            justify-content: center;
+            flex-direction: column;
     }
 }
 
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
+        display: flex;
+            justify-content: center;
+            flex-direction: column;
     }
 }
 /*Mobile*/
-@media (max-width: 480px) {
+@media (min-width: 428px) {
 
     .fillter-web-links,
     .fillter-contact-links {
@@ -27,7 +33,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .side-info {
         display: inline-flex;
         flex-direction: column;
@@ -38,14 +44,14 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .fillter-icons-list {
         display: none;
         background-color: none;
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .fillter-row-info {
         display: flex;
         align-items: center;
@@ -53,21 +59,21 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .fillter-studio-info {
         display: none;
 
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .fillter-team-info {
         display: flex;
         flex-direction: column;
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .fillter-customers-section ul {
         display: grid;
         justify-items: center;
@@ -75,14 +81,14 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .footer {
         display: flex;
         flex-direction: column;
     }
 }
 
-@media (max-width:480px) {
+@media (min-width: 428px) {
     .footer li {
         display: flex;
         flex-direction: column;
@@ -92,7 +98,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .fillter-sm-heading {
         padding: 0;
         margin-top: 72px;
@@ -100,7 +106,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .subscribe-input .sub-form {
         display: flex;
         flex-direction: column;
@@ -108,7 +114,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
 
     .lbl-sub {
         margin-top: 72px;
@@ -117,27 +123,27 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .subscribe-ftr {
         width: 398px;
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .sub {
         margin-top: 24px;
         margin-left: 0;
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .fillter-paragraph {
         display: flex;
         justify-content: center;
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .fillter-paragraph-info {
         width: fit-content;
         display: flex;
@@ -146,24 +152,106 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .fillter-business {
         width: 320px;
         font-size: 36px;
         letter-spacing: 0.72px;
     }
 }
-@media (max-width: 480px) {
+@media (min-width: 428px) {
     .head-links {
         display: flex;
         flex-direction: row;
         gap: 175px;
     }
 }
-@media (min-width: 480px) {
+@media (min-width: 428px) {
     .fillter-cms-icon {
         width: 190px;
         height: 88px;
         gap: 72px 16px;
+    }
+}
+/*Table*/
+@media (min-width: 768px) {
+    .fillter-web-links {
+        display: inline-flex;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .head-links .menu-toogle,
+    .ham-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .head-links {
+        gap: 0;
+        max-height: 72px;
+    }
+}
+
+@media (min-width: 768px) {
+    .page-header .menu-container {
+        margin: 0;
+        padding: 0;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .fillter-contact-links {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-left: 121px;
+        gap: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .fillter-links {
+        padding: 28px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .fillter-business {
+        width: 496px;
+        font-size: 56px;
+        letter-spacing: 1.12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .side-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .fillter-paragraph {
+        font-size: 36px;
+        display: flex;
+        justify-content: start;
+    }
+}
+
+@media (min-width: 768px) {
+    .fillter-row-info {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+@media (min-wdith: 768px) {
+    .fillter-team-info>.fillter-social-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }

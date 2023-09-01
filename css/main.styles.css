@@ -1243,7 +1243,7 @@ label::before {
     stroke: var(--font-main-color);
 }
 
-.manu-container {
+.menu-container {
     position: fixed;
     top: 0;
     left: 0;
