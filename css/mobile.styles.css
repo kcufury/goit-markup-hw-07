@@ -291,5 +291,28 @@
 @media (min-width: 768px) {
     .subscribe-input .sub-form {
         display: inline-flex;
+        flex-direction: row;
+            align-items: end;
+        }
+        }
+        
+        @media (min-width: 768px) {
+        
+            .lbl-sub,
+            .sub {
+                margin-top: 72px;
+                text-align: left;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .subscribe-ftr {
+                max-width: 264px;
+            }
+        }
+        
+        @media (min-width:768px) {
+            .lbl-sub {
+                padding-right: 24px;
     }
 }
