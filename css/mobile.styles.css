@@ -26,14 +26,11 @@
 }
 /*Mobile*/
 @media (min-width: 428px) {
-
     .fillter-web-links,
     .fillter-contact-links {
         display: none;
-    }
-}
+    }    
 
-@media (min-width: 428px) {
     .side-info {
         display: inline-flex;
         flex-direction: column;
@@ -41,278 +38,233 @@
         align-items: center;
         padding: 0;
         margin-top: 96px;
-    }
-}
+    }    
 
-@media (min-width: 428px) {
     .fillter-icons-list {
         display: none;
         background-color: none;
-    }
-}
+    }    
 
-@media (min-width: 428px) {
     .fillter-row-info {
         display: flex;
         align-items: center;
         margin-bottom: 72px;
-    }
-}
+    }    
 
-@media (min-width: 428px) {
     .fillter-studio-info {
         display: none;
-
     }
-}
-
+}        
 @media (min-width: 428px) {
     .fillter-team-info {
         display: flex;
         flex-direction: column;
-    }
-}
+    }    
 
-@media (min-width: 428px) {
     .fillter-customers-section ul {
         display: grid;
         justify-items: center;
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
+}        
 @media (min-width: 428px) {
     .footer {
         display: flex;
         flex-direction: column;
-    }
-}
-
-@media (min-width: 428px) {
+    }    
     .footer li {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 0;
-    }
-}
-
-@media (min-width: 428px) {
+    }    
     .fillter-sm-heading {
         padding: 0;
         margin-top: 72px;
         text-align: center;
-    }
-}
-
-@media (min-width: 428px) {
+    }    
     .subscribe-input .sub-form {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-}
-
-@media (min-width: 428px) {
-
+    }    
     .lbl-sub {
         margin-top: 72px;
         margin-left: 0;
         text-align: center;
-    }
-}
-
-@media (min-width: 428px) {
+    }    
     .subscribe-ftr {
         width: 398px;
-    }
-}
-
-@media (min-width: 428px) {
+    }    
     .sub {
         margin-top: 24px;
         margin-left: 0;
     }
 }
-
 @media (min-width: 428px) {
     .fillter-paragraph {
         display: flex;
         justify-content: center;
     }
-}
 
-@media (min-width: 428px) {
     .fillter-paragraph-info {
         width: fit-content;
         display: flex;
         flex-direction: column;
         align-items: stretch;
     }
-}
 
-@media (min-width: 428px) {
     .fillter-business {
         width: 320px;
         font-size: 36px;
         letter-spacing: 0.72px;
     }
-}
-@media (min-width: 428px) {
+
     .head-links {
         display: flex;
         flex-direction: row;
         gap: 175px;
     }
-}
-@media (min-width: 428px) {
+
     .fillter-cms-icon {
         width: 190px;
         height: 88px;
         gap: 72px 16px;
     }
+    .js-container.is-open {
+        translate: none;
+    }
+                
+    .js-menu-container {
+        position: fixed;
+        inset: 0;
+        translate: -100% 0 0;
+        transition: translate var(--transition);
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--background-main-color);
+    }
+    
 }
+
 /*Table*/
 @media (min-width: 768px) {
     .fillter-web-links {
         display: inline-flex;
-    }
-}
-
-@media (min-width: 768px) {
-
+    }    
     .head-links .menu-toogle,
     .ham-icon {
         display: none;
-    }
-}
+    }    
 
-@media (min-width: 768px) {
     .head-links {
         gap: 0;
         max-height: 72px;
-    }
-}
+    }    
 
-@media (min-width: 768px) {
     .page-header .menu-container {
         margin: 0;
         padding: 0;
+    }    
 
-    }
-}
-
-@media (min-width: 768px) {
     .fillter-contact-links {
         display: flex;
         flex-direction: column;
         padding: 0;
         margin-left: 121px;
         gap: 12px;
-    }
-}
+    }    
 
-@media (min-width: 768px) {
     .fillter-links {
         padding: 28px 0;
     }
 }
-
+        
 @media (min-width: 768px) {
     .fillter-business {
         width: 496px;
         font-size: 56px;
         letter-spacing: 1.12px;
-    }
-}
+        }
 
-@media (min-width: 768px) {
     .side-info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-}
+        }
 
-@media (min-width: 768px) {
     .fillter-paragraph {
         font-size: 36px;
         display: flex;
         justify-content: start;
     }
 }
-
 @media (min-width: 768px) {
     .fillter-row-info {
         display: flex;
         align-items: flex-start;
-    }
-}
+    }    
 
-@media (min-width: 768px) {
     .fillter-team-info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 64px 24px;
             justify-items: center;
-    }
-}
+    }        
 
-@media (min-width: 768px) {
     .fillter-social-img {
         max-width: 264px;
-    }
-}
+    }    
 
-@media (min-width: 768px) {
     .fillter-customers-section .fillter-bottom-ul {
         display: grid;
         justify-items: center;
         grid-template-columns: repeat(3, 3fr);
-    }
-}
+    }    
 
-@media (min-width: 768px) {
     .footer {
         display: inline-flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
         gap: 24px;
-    }
-}
+    }    
 
-@media (min-width: 768px) {
     .fillter-sm-heading {
         margin: 0;
-    }
-}
+        text-align: left;
+    }    
 
-@media (min-width: 768px) {
     .subscribe-input .sub-form {
         display: inline-flex;
         flex-direction: row;
-            align-items: end;
-        }
-        }
+        align-items: end;
+    }    
         
-        @media (min-width: 768px) {
-        
-            .lbl-sub,
-            .sub {
-                margin-top: 72px;
-                text-align: left;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .subscribe-ftr {
-                max-width: 264px;
-            }
-        }
-        
-        @media (min-width:768px) {
-            .lbl-sub {
-                padding-right: 24px;
+    .sub {
+        text-align: left;
     }
+        
+    .subscribe-ftr {
+        max-width: 264px;
+    }
+        
+    .lbl-sub {
+        margin-top: 72px;
+        padding-right: 24px;
+    }
+    .footer li {
+        display: flex;
+        align-items: flex-start;
+    }
+    .sub-name {
+        text-align: left;
+    }
+    .subscribe-input {
+        margin-right: 45px;
+    }
+}
+/*Desktop*/
+@media (min-width: 1159px) {
+    
 }

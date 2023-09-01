@@ -30,11 +30,11 @@
     <header class="page-header">
       <div class="container">
         <nav class="head-links">
-          <a href="#" class="fillter-logo-links">
+          <a href="./index.html" class="fillter-logo-links">
             <span class="fillter-studio">Web</span
             ><span class="fillter-name">Studio</span></a
           >
-          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
             <div class="ham-icon">
             <svg width="32" height="22" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
@@ -62,6 +62,66 @@
           </div>
         </nav>
       </div>
+      <!-- Mobile menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="close-menu-toggle js-close-menu" type="button">
+              <svg wdith="8px" height="8px" class="close-btn-ftr">
+                <use href="./images/close-btn.svg#icon-close-blk"></use></svg>
+            </button>
+            <div class="mobile-menu-wrapper">
+              <ul class="mobile-menu">
+                <li>
+                  <a href="./index.html" class="link mobile-active">Studio</a>
+                </li>
+                <li>
+                  <a href="./portfolio.html" class="link">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#" class="link">Contacts</a>
+                </li>
+              </ul>
+              <div class="mobile-contacts">
+                <ul>
+                  <li>
+                    <a href="tel:+110001111111" class="mobile-tel">+11 (000) 111-11-11</a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@devstudio.com" class="mobile-mail">info@devstudio.com</a>
+                  </li>
+                </ul>
+                <ul class="mobile-social">
+                  <li>
+                    <a href class="social-mobile-icon">
+                      <svg width="24px" height="24px">
+                        <use href="./images/socialmedia-icons.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href class="social-mobile-icon">
+                      <svg width="24px" height="24px">
+                        <use href="./images/socialmedia-icons.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href class="social-mobile-icon">
+                      <svg width="24px" height="24px">
+                        <use href="./images/socialmedia-icons.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href class="social-mobile-icon">
+                      <svg width="24px" height="24px">
+                        <use href="./images/socialmedia-icons.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
     </header>
     <!-- Main Info -->
     <main>
@@ -519,7 +579,7 @@
             </div>
           </li>
           </ul>
-            <li>
+            <li class="ftr-input">
             <div class="subscribe-input">
             <form name="signup_form" autocomplete="on" validate class="sub-form">
               <label class="lbl-sub">
@@ -541,66 +601,7 @@
       </div>
       </div>
     </footer>
-    <div class="menu-container js-menu-container is-open" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
-              <svg class="close-btn-ftr">
-                <use href="./images/close-btn.svg#icon-close-blk" width="8px" height="8px" ></use></svg>
-            </button>
-            <div class="mobile-menu-wrapper">
-              <ul class="mobile-menu">
-                <li>
-                  <a href="./index.html" class="link mobile-active">Studio</a>
-                </li>
-                <li>
-                  <a href="./portfolio.html" class="link">Portfolio</a>
-                </li>
-                <li>
-                  <a href="#" class="link">Contacts</a>
-                </li>
-              </ul>
-              <div class="mobile-contacts">
-                <ul>
-                  <li>
-                    <a href="tel:+110001111111" class="mobile-tel">+11 (000) 111-11-11</a>
-                  </li>
-                  <li>
-                    <a href="mailto:info@devstudio.com" class="mobile-mail">info@devstudio.com</a>
-                  </li>
-                </ul>
-                <ul class="mobile-social">
-                  <li>
-                    <a href class="social-mobile-icon">
-                      <svg width="24px" height="24px">
-                        <use href="./images/socialmedia-icons.svg#icon-instagram-2"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href class="social-mobile-icon">
-                      <svg width="24px" height="24px">
-                        <use href="./images/socialmedia-icons.svg#icon-twitter-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href class="social-mobile-icon">
-                      <svg width="24px" height="24px">
-                        <use href="./images/socialmedia-icons.svg#icon-facebook-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href class="social-mobile-icon">
-                      <svg width="24px" height="24px">
-                        <use href="./images/socialmedia-icons.svg#icon-linkedin-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div data-modal class="backdrop is-hidden">
+      <div data-modal class="backdrop is-hidden">
               <div class="modal">
                 <button data-modal-close class="close-btn" type="button">
                 <svg class="close-btn-svg">
