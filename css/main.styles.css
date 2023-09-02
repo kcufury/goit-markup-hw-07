@@ -95,7 +95,9 @@ ol {
     flex-direction: row;
 
 }
-
+footer {
+    width: auto;
+}
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -715,7 +717,6 @@ li {
 
 .fillter-bottom-section ul {
     display: inline-flex;
-    justify-content: center;
 }
 
 .fillter-bottom-studio {
@@ -1274,9 +1275,14 @@ label::before {
     margin-bottom: 40px;
 }
 
-
+.mobile-active:focus,
 .mobile-active:active {
     color: var(--brand-color);
+}
+.mobile-menu
+.mobile-active {
+    color: var(--brand-color);
+    position: relative;
 }
 
 .mobile-menu {

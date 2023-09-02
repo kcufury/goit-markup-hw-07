@@ -1,4 +1,4 @@
-@media screen and (min-width: 428px) {
+@media screen {
     .container {
         max-width: 480px;
         display: flex;
@@ -7,7 +7,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
     .container {
         max-width: 768px;
         display: flex;
@@ -16,9 +16,16 @@
     }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
     .container {
-        max-width: 1158px;
+        max-width: 1159px;
+        display: flex;
+            justify-content: center;
+            flex-direction: column;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
         display: flex;
             justify-content: center;
             flex-direction: column;
@@ -266,5 +273,103 @@
 }
 /*Desktop*/
 @media (min-width: 1159px) {
-    
+    .fillter-contact-links {
+        display: inline-flex;
+        flex-direction: row;
+        margin-left: 224px;
+    }
+    .side-info {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .fillter-icons-list {
+        display: flex;
+        align-items: center;
+        background-color: var(--background-secondary-color);
+    }
+    .fillter-paragraph {
+        font-size: 20px;
+    }
+    .fillter-team-info {
+        display: inline-flex;
+        flex-direction: row;
+
+    }
+    .fillter-customers-section .fillter-bottom-ul {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .lbl-sub {
+        margin-top: 0;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .head-links {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        margin: 0;
+    }
+    .fillter-logo-links {
+        padding: 0;
+        margin-right: 76px;
+    }
+    .fillter-studio-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+}
+@media (min-width: 1159px) {
+    .container {
+        min-width: 1159px;
+
+    }
+    .fillter-bottom-section-logo {
+        margin-right: 120px;
+        
+    }
+    .ftr-input {
+        margin-left: 80px;
+    }
+    .fillter-web-links {
+        margin-right: 78px;
+    }
+}
+/*Desktop*/
+@media screen and (min-width: 1200px) {
+    .main-info {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('/goit-markup-hw-07/images/office-people.jpg');
+    }
+}
+/*Tablet*/
+@media screen and (min-width: 768px) {
+  .first-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('/goit-markup-hw-07/images/office-people.jpg');
+    background-size: cover;
+    height: 436px;
+    max-width: 1200px;
+  }
+}
+/*Mobile*/
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-info {
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('/goit-markup-hw-07/images/mobile/1-dark-bg.png');
+    background-size: cover;
+  }
 }
