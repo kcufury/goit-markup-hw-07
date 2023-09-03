@@ -499,7 +499,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('/goit-markup-hw-07/images/office-people.jpg');
+      url('/goit-markup-hw-07/images/mobile/1-dark-bg.png');
     }
 }
 /*Tablet*/
@@ -509,7 +509,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('/goit-markup-hw-07/images/office-people.jpg');
+      url('/goit-markup-hw-07/images/mobile/1-dark-bg.png');
     background-size: cover;
     height: 436px;
     max-width: 1200px;
@@ -522,7 +522,7 @@
   (min-resolution: 2dppx) {
   .main-info {
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('/goit-markup-hw-07/images/mobile/1-dark-bg.png');
+      url('/goit-markup-hw-07/images/office-people.jpg');
     background-size: cover;
   }
 }
