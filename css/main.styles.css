@@ -1367,3 +1367,7 @@ label::before {
 .ftr-input > .subscribe-input {
     display: flex;
 }
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: var(--background-fourth-color);
+}
