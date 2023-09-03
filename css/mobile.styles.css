@@ -135,7 +135,7 @@
     }
 
     .fillter-cms-icon {
-        width: 190px;
+        width: 168px;
         height: 88px;
         gap: 72px 16px;
     }
@@ -157,7 +157,7 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) {
     .fillter-web-links,
     .fillter-contact-links {
         display: none;
@@ -187,7 +187,7 @@
         display: none;
     }
 }        
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) {
     .fillter-team-info {
         display: flex;
         flex-direction: column;
@@ -196,10 +196,10 @@
     .fillter-customers-section ul {
         display: grid;
         justify-items: center;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, auto);
     }
 }        
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) {
     .footer {
         display: flex;
         flex-direction: column;
@@ -234,7 +234,7 @@
         margin-left: 0;
     }
 }
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) {
     .fillter-paragraph {
         display: flex;
         justify-content: center;
@@ -260,7 +260,7 @@
     }
 
     .fillter-cms-icon {
-        width: 190px;
+        width: 168px;
         height: 88px;
         gap: 72px 16px;
     }
@@ -322,7 +322,7 @@
 
     .side-info {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, auto);
         }
 
     .fillter-paragraph {
@@ -339,7 +339,8 @@
 
     .fillter-team-info {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        grid-template-columns: repeat(2, auto);
         gap: 64px 24px;
             justify-items: center;
     }        
@@ -351,9 +352,8 @@
     .fillter-customers-section .fillter-bottom-ul {
         display: grid;
         align-items: center;
-        max-width: 768px;
-        justify-content: flex-end;
-        grid-template-columns: repeat(3, 3fr);
+        justify-items: flex-end;
+        grid-template-columns: repeat(3, auto);
     }    
 
     .footer {
@@ -401,10 +401,19 @@
     }
     .fillter-bottom-section-logo {
         max-width: 264px;
+        position: relative;
     }
     .fillter-footer-icons-list {
         max-width: 208px;
         gap: 24px;
+        position: absolute;
+        right: 128px;
+    }
+    .fillter-cms-icon {
+        width: 168px;
+        height: 88px;
+        display: flex;
+        align-items: center;
     }
 }
 /*Desktop*/
@@ -468,7 +477,11 @@
     }
     .fillter-bottom-section-logo {
         margin-right: 120px;
+        position: unset;
         
+    }
+    .fillter-footer-icons-list {
+        position: unset;
     }
     .ftr-input {
         margin-left: 80px;
