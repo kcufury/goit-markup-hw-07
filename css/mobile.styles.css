@@ -386,7 +386,7 @@
     }
         
     .lbl-sub {
-        margin-top: 72px;
+        margin-top: 0;
         padding-right: 24px;
     }
     .footer li {
@@ -406,8 +406,9 @@
     .fillter-footer-icons-list {
         max-width: 208px;
         gap: 24px;
-        position: absolute;
-        right: 128px;
+        position: relative;
+        left: 300px;
+        bottom: 109px;
     }
     .fillter-cms-icon {
         width: 168px;
